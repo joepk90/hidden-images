@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Image (Performance))</title>
+
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Hidden Images</h1>
+
+    <p>Three image tags are included on the page, each with a valid image source.</p>
+    <p>Two out of the three image tags are hidden using CSS.</p>
+    <p>Open the network tab and reload to see which images have donwloaded (hint: all of them)</p>
+
+    <img src="https://via.placeholder.com/350x150?text=visible">
+    <img style="display: none;" src="https://via.placeholder.com/350x150?text=hidden+with+inline+style">
+    <img class="hidden" src="https://via.placeholder.com/350x150?text=hidden+with+class">
+
+    <div class="hidden">
+        <img src="https://via.placeholder.com/350x150?text=hidden+with+parent+element+using+class">
+    </div>
+
+</body>
+</html>
