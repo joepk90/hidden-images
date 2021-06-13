@@ -17,6 +17,8 @@
     
     <h1>Hidden Images</h1>
 
+    <h2>Image Elements</h2>
+
     <p>Three image tags are included on the page, each with a valid image source.</p>
     <p>Two out of the three image tags are hidden using CSS.</p>
     <p>Open the network tab and reload to see which images have donwloaded (hint: all of them)</p>
@@ -28,6 +30,18 @@
     <div class="hidden">
         <img src="https://via.placeholder.com/350x150?text=hidden+with+parent+element+using+class">
     </div>
+
+    <h2>Background Images (CSS</h2>
+    <p>Two divs are with background images. One div is hidden</p>
+    <p>The hidden div's image is not being requested. The visible div is</p>
+    <p>using hidden elements with backgorund images prevents the image from being downloaded</p>
+
+    <div style="background: url(https://via.placeholder.com/350x150?text=background+image+visible)"></div>
+
+    <div style="display: none">
+        <div style="background: url(https://via.placeholder.com/350x150?text=background+image+hidden)"></div>
+     </div>
+
 
 </body>
 </html>
